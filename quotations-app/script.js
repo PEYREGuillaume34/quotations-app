@@ -9,6 +9,8 @@ formulaire.addEventListener("submit", function(event) {
     console.log(text,author)
 
     addQuote(text, author)
+    document.getElementById("citation").value =""
+    document.getElementById("auteur").value = ""
 });
 
 
@@ -16,6 +18,7 @@ let compteurReference = 0
 
 
 function addQuote(text,author){
+
 compteurReference +=1
 document.getElementById("compteur").innerText = compteurReference
 
@@ -36,6 +39,3 @@ document.getElementById("quote-list").appendChild(divQuote)
 
 }
 
-
-
-let number
